@@ -1,0 +1,21 @@
+% 1. Read the images and display them
+grayFile = 'lena512.bmp';
+colorFile = 'lena512color.tiff';
+
+grayImg = imread(grayFile);
+colorImg = imread(colorFile);
+
+figure, imshow(grayImg), title('GrayImg');
+figure, imshow(colorImg), title('colorImg');
+
+% 2. (a) Convert the color image to grayscale
+Icolor = imread("lena512color.tiff");
+Icolor_gray = rgb2gray(Icolor);
+figure, imshow(Icolor_gray), title('Colour to greyscale Img');
+
+% (b) Convert the grayscale image into a binary image
+Igray = imread('lena512.bmp');
+thre
+Ibin  = im2bw(Igray,0.5);   
+figure, imshow(Ibin), title('Greyscale to Binary IMG');
+
