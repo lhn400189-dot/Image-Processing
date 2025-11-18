@@ -1,0 +1,28 @@
+# DOTA Dataset Configuration for YOLO11-OBB
+# Dataset root directory
+path: ./data
+
+# Train/val splits
+train: train/images
+val: val/images
+
+# Number of classes
+nc: 15
+
+# Class names (DOTA v1.0)
+names:
+  0: plane
+  1: ship
+  2: storage-tank
+  3: baseball-diamond
+  4: tennis-court
+  5: basketball-court
+  6: ground-track-field
+  7: harbor
+  8: bridge
+  9: large-vehicle
+  10: small-vehicle
+  11: helicopter
+  12: roundabout
+  13: soccer-ball-field
+  14: swimming-pool
